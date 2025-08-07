@@ -15,7 +15,10 @@ int main() {
 	cout << "Matrix: \n" << print_matrix(matrix, N, M) << endl;
 
 	int sum_of_main_diagonal = calculate_sum_of_main_diagonal(matrix, N, M);
-	cout << "\nSum o f main diagonal = " << sum_of_main_diagonal << endl;
+	cout << "\nSum of main diagonal = " << sum_of_main_diagonal << endl;
+
+	int sum_of_secondary_diagonal = calculate_sum_of_secondary_diagonal(matrix, N);
+	cout << "\nSum of secondary diagonal = " << sum_of_secondary_diagonal << endl;
 
 	return 0;
 }

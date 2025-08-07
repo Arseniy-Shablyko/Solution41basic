@@ -36,17 +36,13 @@ int calculate_sum_of_main_diagonal(int** matrix, int N, int M) {
 	return sum;
 }
 
-//int calculate_sum_of_secondary_diagonal(int** matrix, int N, int M) {
-//	int sum = 0;
-//
-//	for (int i = 0; i < N; i++) {
-//		for (int j = 0; j < M; j++) {
-//			if () {
-//				sum += matrix[i][j];
-//			}
-//		}
-//
-//	}
-//
-//	return sum;
-//}
+int calculate_sum_of_secondary_diagonal(int** matrix, int N) {
+	int sum = 0;
+
+	for (int i = 0; i < N; i++) {
+		sum += matrix[i][N - 1 - i];
+
+	}
+
+	return sum;
+}
